@@ -1,0 +1,1416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 9 & 10 English Reviewer | RSAT</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+
+<style>
+:root {
+    --yellow:#facc15;
+    --gold:#eab308;
+    --light:#fefce8;
+    --pale:#fffbeb;
+    --dark:#713f12;
+    --text:#422006;
+    --border:#fde68a;
+    --white:#ffffff;
+}
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fffdf5;
+    color:var(--text);
+    line-height:1.7;
+}
+
+header {
+    background:linear-gradient(135deg,#facc15,#fde68a);
+    text-align:center;
+    padding:35px 18px;
+    color:#422006;
+}
+
+header h1 {
+    font-size:clamp(25px,5vw,38px);
+    font-weight:900;
+    letter-spacing:1px;
+}
+
+header p {
+    margin-top:5px;
+    font-weight:600;
+}
+
+.header-info {
+    margin-top:18px;
+    font-size:13px;
+    line-height:1.8;
+}
+
+.container {
+    width:min(950px,92%);
+    margin:auto;
+}
+
+.motivation {
+    background:#fff7cc;
+    border:2px solid var(--border);
+    border-radius:15px;
+    padding:20px;
+    margin:25px auto;
+    text-align:center;
+}
+
+.motivation h2 {
+    color:#a16207;
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.motivation p {
+    font-size:14px;
+}
+
+nav {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:9px;
+    margin:20px 0;
+}
+
+nav a {
+    text-decoration:none;
+    background:#facc15;
+    color:#422006;
+    padding:9px 15px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+nav a:hover {
+    background:#eab308;
+    transform:translateY(-2px);
+}
+
+.notice {
+    background:#fff7cc;
+    border-left:4px solid #eab308;
+    border-radius:8px;
+    padding:13px;
+    font-size:13px;
+    margin:20px 0;
+}
+
+.grade-banner {
+    background:#facc15;
+    color:#422006;
+    text-align:center;
+    padding:20px 15px;
+    border-radius:13px;
+    margin:35px 0 18px;
+}
+
+.grade-banner h2 {
+    font-size:23px;
+}
+
+.grade-banner p {
+    font-size:13px;
+    font-weight:600;
+}
+
+.quarter-title {
+    background:#fef3c7;
+    color:#854d0e;
+    padding:13px;
+    border-radius:9px;
+    margin:22px 0 12px;
+    font-size:16px;
+}
+
+.search-box {
+    margin:20px 0;
+}
+
+.search-box input {
+    width:100%;
+    padding:14px 17px;
+    border:2px solid var(--border);
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+    background:white;
+}
+
+.search-box input:focus {
+    border-color:var(--gold);
+}
+
+.lesson {
+    background:white;
+    border:1px solid var(--border);
+    border-radius:12px;
+    margin:12px 0;
+    overflow:hidden;
+}
+
+.lesson summary {
+    cursor:pointer;
+    list-style:none;
+    padding:16px;
+    background:#fffbeb;
+    font-weight:bold;
+    color:#854d0e;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+}
+
+.lesson summary::-webkit-details-marker {
+    display:none;
+}
+
+.lesson summary::after {
+    content:"+";
+    font-size:23px;
+    color:#ca8a04;
+}
+
+.lesson[open] summary::after {
+    content:"−";
+}
+
+.lesson-content {
+    padding:20px;
+    font-size:14px;
+}
+
+.lesson-content h3 {
+    color:#a16207;
+    margin:17px 0 7px;
+    font-size:16px;
+}
+
+.lesson-content h3:first-child {
+    margin-top:0;
+}
+
+.lesson-content p {
+    margin-bottom:10px;
+}
+
+.lesson-content ul,
+.lesson-content ol {
+    padding-left:22px;
+    margin:8px 0 13px;
+}
+
+.lesson-content li {
+    margin-bottom:5px;
+}
+
+.example {
+    background:#fef9c3;
+    border-left:4px solid #eab308;
+    padding:12px;
+    margin:13px 0;
+    border-radius:5px;
+}
+
+.key {
+    background:#fff7cc;
+    border:1px dashed #eab308;
+    padding:12px;
+    border-radius:9px;
+    margin-top:13px;
+}
+
+.quiz-section {
+    margin:35px 0;
+}
+
+.quiz-question {
+    background:white;
+    border:1px solid var(--border);
+    padding:17px;
+    margin:13px 0;
+    border-radius:12px;
+}
+
+.quiz-question p {
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.quiz-question label {
+    display:block;
+    padding:8px 9px;
+    margin:5px 0;
+    background:#fffbeb;
+    border-radius:7px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.quiz-question label:hover {
+    background:#fef3c7;
+}
+
+.quiz-question input {
+    margin-right:8px;
+    accent-color:#ca8a04;
+}
+
+button {
+    border:none;
+    padding:12px 20px;
+    border-radius:9px;
+    background:#eab308;
+    color:#422006;
+    font-weight:bold;
+    cursor:pointer;
+    margin:5px;
+    font-size:14px;
+}
+
+button:hover {
+    background:#ca8a04;
+}
+
+.result {
+    display:none;
+    background:#fef9c3;
+    border:2px solid #eab308;
+    border-radius:12px;
+    padding:18px;
+    margin-top:18px;
+    text-align:center;
+}
+
+.quiz-buttons {
+    text-align:center;
+    margin-top:20px;
+}
+
+footer {
+    text-align:center;
+    padding:25px 15px;
+    margin-top:35px;
+    background:#fef3c7;
+    color:#854d0e;
+    font-size:13px;
+}
+
+@media(max-width:600px) {
+    header {
+        padding:27px 13px;
+    }
+
+    .container {
+        width:94%;
+    }
+
+    .lesson summary {
+        padding:14px;
+        font-size:14px;
+    }
+
+    .lesson-content {
+        padding:15px;
+    }
+
+    nav a {
+        font-size:12px;
+        padding:8px 12px;
+    }
+
+    .grade-banner h2 {
+        font-size:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header id="top">
+    <h1>📚 ENGLISH REVIEWER</h1>
+    <p>GRADE 9 & GRADE 10</p>
+    <p>RSAT PREPARATION</p>
+
+    <div class="header-info">
+        <p>Made by Angel De Guzman Tictic │ 10-Patient</p>
+        <p>Concepcion Integrated School - Secondary Level</p>
+        <p>Learn • Understand • Practice • Achieve</p>
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="motivation">
+        <h2>🌟 A Little Motivation Before You Begin!</h2>
+        <p>
+            Every new word you learn and every lesson you understand
+            brings you one step closer to your goal.
+            Take your time, keep practicing, and believe in your ability!
+        </p>
+        <p><b>Good luck, CISians! Aim high for RSAT! 💛</b></p>
+    </div>
+
+    <nav>
+        <a href="#grade9">Grade 9 Lessons</a>
+        <a href="#grade10">Grade 10 Lessons</a>
+        <a href="#quiz9">Grade 9 Quiz</a>
+        <a href="#quiz10">Grade 10 Quiz</a>
+        <a href="#top">Back to Top ↑</a>
+    </nav>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search any lesson or keyword..."
+            oninput="searchLessons()">
+    </div>
+
+    <div class="notice">
+        <b>📌 How to Use This Reviewer</b>
+        <p>
+            Choose your grade level and click each lesson to open its
+            explanation. Read the examples and key points.
+            Take the quizzes after reviewing.
+        </p>
+        <p>
+            Note: Grade 9 topics follow our proposed outline.
+            Please verify them with your actual school lessons.
+        </p>
+    </div>
+
+    <section id="grade9">
+        <div class="grade-banner">
+            <h2>📖 GRADE 9 ENGLISH</h2>
+            <p>FIRST TO FOURTH QUARTER</p>
+            <p>Grammar • Literature • Listening • Critical Reading</p>
+        </div>
+
+        <h3 class="quarter-title">FIRST QUARTER — GRAMMAR AND COMMUNICATION</h3>
+
+        <details class="lesson">
+            <summary>1. Modals of Permission, Obligation, and Prohibition</summary>
+            <div class="lesson-content">
+                <h3>What are Modals?</h3>
+                <p>Modals are helping verbs used with the main verb to express ability, possibility, permission, advice, obligation, or prohibition.</p>
+                <h3>Common Modals</h3>
+                <ul>
+                    <li><b>Can:</b> Ability or informal permission.</li>
+                    <li><b>Could:</b> Past ability or polite request.</li>
+                    <li><b>May:</b> Permission or possibility.</li>
+                    <li><b>Might:</b> Possibility.</li>
+                    <li><b>Must:</b> Strong obligation or necessity.</li>
+                    <li><b>Should:</b> Advice or recommendation.</li>
+                    <li><b>Must not:</b> Prohibition.</li>
+                </ul>
+                <div class="example">
+                    You must submit your project on time. (Obligation)
+                    <br>You may leave the room. (Permission)
+                    <br>You must not cheat during the exam. (Prohibition)
+                </div>
+                <div class="key">REMEMBER: Modals are followed by the base form of the main verb.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>2. Conditional Sentences</summary>
+            <div class="lesson-content">
+                <h3>What are Conditional Sentences?</h3>
+                <p>Conditional sentences express a condition and its possible result. They commonly use "if."</p>
+                <h3>Four Types</h3>
+                <ul>
+                    <li><b>Zero Conditional:</b> General truths. If + present simple, present simple.</li>
+                    <li><b>First Conditional:</b> Real future possibility. If + present simple, will + base verb.</li>
+                    <li><b>Second Conditional:</b> Imaginary or unlikely present/future situation. If + past simple, would + base verb.</li>
+                    <li><b>Third Conditional:</b> Imaginary past situation. If + past perfect, would have + past participle.</li>
+                </ul>
+                <div class="example">
+                    Zero: If you heat ice, it melts.
+                    <br>First: If I study, I will pass.
+                    <br>Second: If I had wings, I would fly.
+                    <br>Third: If I had studied, I would have passed.
+                </div>
+                <div class="key">REMEMBER: Zero = fact; First = possible future; Second = unreal present/future; Third = unreal past.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>3. Word Formation</summary>
+            <div class="lesson-content">
+                <h3>What is Word Formation?</h3>
+                <p>Word formation is the process of creating new words from existing words or word parts.</p>
+                <ul>
+                    <li><b>Clipping:</b> Shortening a word. Example: advertisement → ad.</li>
+                    <li><b>Blending:</b> Combining parts of two words. Example: breakfast + lunch → brunch.</li>
+                    <li><b>Acronym:</b> A word formed from initial letters and pronounced as a word. Example: NASA.</li>
+                    <li><b>Compounding:</b> Combining two complete words. Example: toothbrush.</li>
+                    <li><b>Affixation:</b> Adding a prefix or suffix. Example: happy → unhappy.</li>
+                </ul>
+                <div class="key">REMEMBER: Clipping shortens; blending combines parts; compounding joins complete words.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>4. Context Clues</summary>
+            <div class="lesson-content">
+                <h3>What are Context Clues?</h3>
+                <p>Context clues are hints in a sentence or paragraph that help readers understand unfamiliar words.</p>
+                <h3>Types of Context Clues</h3>
+                <ul>
+                    <li><b>Definition:</b> The meaning is directly explained.</li>
+                    <li><b>Synonym:</b> A similar word gives a hint.</li>
+                    <li><b>Antonym:</b> An opposite word provides a clue.</li>
+                    <li><b>Example:</b> Examples help explain the word.</li>
+                    <li><b>Inference:</b> Readers use surrounding information to figure out the meaning.</li>
+                </ul>
+                <div class="example">
+                    "The room was enormous, meaning it was very large."
+                    <br>The phrase "very large" explains enormous.
+                </div>
+                <div class="key">REMEMBER: Read the words around an unfamiliar word before using a dictionary.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>5. Communicative Styles</summary>
+            <div class="lesson-content">
+                <h3>What are Communicative Styles?</h3>
+                <p>Communicative styles are ways of speaking depending on the situation, audience, and relationship between speakers.</p>
+                <ul>
+                    <li><b>Intimate:</b> Used with people who share a close relationship.</li>
+                    <li><b>Casual:</b> Informal conversations with friends or familiar people.</li>
+                    <li><b>Consultative:</b> Polite, two-way communication, often in professional situations.</li>
+                    <li><b>Formal:</b> Used in serious or official situations.</li>
+                    <li><b>Frozen:</b> Fixed expressions that rarely change, such as traditional ceremonies or pledges.</li>
+                </ul>
+                <div class="example">
+                    Casual: "Hey! How are you?"
+                    <br>Formal: "Good morning. May I ask a question?"
+                    <br>Frozen: A traditional oath or pledge.
+                </div>
+                <div class="key">REMEMBER: Choose your speaking style based on your audience and situation.</div>
+            </div>
+        </details>
+
+        <h3 class="quarter-title">SECOND QUARTER — READING AND LITERATURE</h3>
+
+        <details class="lesson">
+            <summary>6. Comparing and Contrasting Texts</summary>
+            <div class="lesson-content">
+                <h3>What is Comparing and Contrasting?</h3>
+                <p>Comparing identifies similarities between two or more texts. Contrasting identifies their differences.</p>
+                <h3>Common Signal Words</h3>
+                <ul>
+                    <li><b>Similarities:</b> Likewise, similarly, both, also.</li>
+                    <li><b>Differences:</b> However, unlike, whereas, on the other hand.</li>
+                </ul>
+                <div class="example">
+                    Both stories have brave main characters.
+                    <br>However, one takes place in the past while the other happens in modern times.
+                </div>
+                <div class="key">REMEMBER: Compare = similarities. Contrast = differences.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>7. Connecting Texts to Real-Life Issues</summary>
+            <div class="lesson-content">
+                <h3>What is Text-to-World Connection?</h3>
+                <p>It means relating the ideas or events in a text to actual situations, experiences, or issues in the world.</p>
+                <h3>Types of Connections</h3>
+                <ul>
+                    <li><b>Text-to-Self:</b> Connecting a text to your personal experiences.</li>
+                    <li><b>Text-to-Text:</b> Connecting one text to another text.</li>
+                    <li><b>Text-to-World:</b> Connecting a text to real-world events and issues.</li>
+                </ul>
+                <div class="example">
+                    A story about bullying can be connected to the real-life
+                    problem of bullying in schools.
+                </div>
+                <div class="key">REMEMBER: Connections help readers understand why a text matters in real life.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>8. Culture, History, and Environment in Literature</summary>
+            <div class="lesson-content">
+                <h3>How Do These Influence Literature?</h3>
+                <p>Literary works are influenced by the time, place, culture, and experiences of the people who create them.</p>
+                <ul>
+                    <li><b>Culture:</b> Traditions, beliefs, values, and customs.</li>
+                    <li><b>History:</b> Important events and experiences from the past.</li>
+                    <li><b>Environment:</b> The natural and social surroundings of people.</li>
+                </ul>
+                <div class="example">
+                    A story written during a war may show fear, loss,
+                    courage, and the effects of conflict on families.
+                </div>
+                <div class="key">REMEMBER: Understanding context helps explain the meaning of a literary work.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>9. Literature and Human Values</summary>
+            <div class="lesson-content">
+                <h3>What are Human Values?</h3>
+                <p>Human values are principles that guide people's actions and decisions.</p>
+                <h3>Examples of Values in Literature</h3>
+                <ul>
+                    <li>Honesty — telling the truth.</li>
+                    <li>Respect — treating others properly.</li>
+                    <li>Compassion — showing concern for others.</li>
+                    <li>Responsibility — accepting duties and consequences.</li>
+                    <li>Perseverance — continuing despite difficulties.</li>
+                    <li>Justice — treating people fairly.</li>
+                </ul>
+                <div class="example">
+                    A character who returns a lost wallet demonstrates honesty.
+                </div>
+                <div class="key">REMEMBER: Literature can teach lessons about human behavior and values.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>10. Literature in a VUCA World</summary>
+            <div class="lesson-content">
+                <h3>What does VUCA mean?</h3>
+                <p>VUCA describes a world that changes quickly and can be difficult to understand or predict.</p>
+                <ul>
+                    <li><b>Volatility:</b> Rapid and unpredictable changes.</li>
+                    <li><b>Uncertainty:</b> Difficulty knowing what will happen.</li>
+                    <li><b>Complexity:</b> Many connected factors make situations difficult.</li>
+                    <li><b>Ambiguity:</b> Lack of clear meaning or understanding.</li>
+                </ul>
+                <h3>How Does Literature Help?</h3>
+                <ul>
+                    <li>Develops empathy and understanding.</li>
+                    <li>Encourages critical thinking.</li>
+                    <li>Shows different perspectives.</li>
+                    <li>Helps readers reflect on real-life challenges.</li>
+                </ul>
+                <div class="key">REMEMBER: VUCA = Volatility, Uncertainty, Complexity, Ambiguity.</div>
+            </div>
+        </details>
+
+        <h3 class="quarter-title">THIRD QUARTER — LISTENING AND VIEWING</h3>
+
+        <details class="lesson">
+            <summary>11. Bias vs. Prejudice</summary>
+            <div class="lesson-content">
+                <h3>What is Bias?</h3>
+                <p>Bias is a preference or inclination that may affect a person's judgment.</p>
+                <h3>What is Prejudice?</h3>
+                <p>Prejudice is a preconceived judgment or opinion about a person or group without sufficient knowledge or evidence.</p>
+                <ul>
+                    <li><b>Bias:</b> A tendency to favor one side or perspective.</li>
+                    <li><b>Prejudice:</b> An unfair judgment formed before knowing the facts.</li>
+                </ul>
+                <div class="example">
+                    Bias: A reviewer always favors one brand.
+                    <br>Prejudice: Assuming someone is incapable based only on their background.
+                </div>
+                <div class="key">REMEMBER: Both can affect fair and objective judgment.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>12. Evaluating Viewed Information</summary>
+            <div class="lesson-content">
+                <h3>What Should You Check?</h3>
+                <p>When watching videos, news reports, or presentations, evaluate whether the information is relevant, accurate, and trustworthy.</p>
+                <ul>
+                    <li><b>Relevance:</b> Is the information related to the topic?</li>
+                    <li><b>Accuracy:</b> Is the information correct?</li>
+                    <li><b>Credibility:</b> Is the source reliable?</li>
+                    <li><b>Currency:</b> Is the information up to date?</li>
+                    <li><b>Purpose:</b> Is the material meant to inform, persuade, or entertain?</li>
+                </ul>
+                <div class="example">
+                    Before sharing a news video, check its source,
+                    publication date, and supporting evidence.
+                </div>
+                <div class="key">REMEMBER: Do not believe or share information without checking its source.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>13. Evaluating Evidence from Listening Materials</summary>
+            <div class="lesson-content">
+                <h3>What is Evidence?</h3>
+                <p>Evidence is information used to support a statement, claim, or argument.</p>
+                <h3>Types of Evidence</h3>
+                <ul>
+                    <li><b>Facts:</b> Statements that can be checked or verified.</li>
+                    <li><b>Statistics:</b> Numerical information or data.</li>
+                    <li><b>Examples:</b> Specific situations that support an idea.</li>
+                    <li><b>Expert Testimony:</b> Information from someone with relevant knowledge or experience.</li>
+                </ul>
+                <div class="example">
+                    A speaker claims that reading improves vocabulary
+                    and supports the claim using research findings.
+                </div>
+                <div class="key">REMEMBER: Strong arguments use relevant and reliable evidence.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>14. Understanding the Speaker's Purpose</summary>
+            <div class="lesson-content">
+                <h3>What is the Speaker's Purpose?</h3>
+                <p>It is the reason why a person delivers a speech or communicates a message.</p>
+                <ul>
+                    <li><b>To Inform:</b> To provide facts or explain something.</li>
+                    <li><b>To Persuade:</b> To influence opinions or actions.</li>
+                    <li><b>To Entertain:</b> To amuse or interest the audience.</li>
+                    <li><b>To Inspire:</b> To encourage or motivate people.</li>
+                </ul>
+                <div class="example">
+                    A speech explaining climate change aims to inform.
+                    <br>A campaign speech asking people to support a cause aims to persuade.
+                </div>
+                <div class="key">REMEMBER: Ask yourself, "What does the speaker want the audience to think, feel, or do?"</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>15. Analyzing Information from Different Media</summary>
+            <div class="lesson-content">
+                <h3>What is Media Analysis?</h3>
+                <p>Media analysis means examining how information is presented through television, radio, websites, newspapers, and social media.</p>
+                <h3>What to Examine</h3>
+                <ul>
+                    <li>Source and author.</li>
+                    <li>Purpose and intended audience.</li>
+                    <li>Facts, opinions, and supporting evidence.</li>
+                    <li>Language, images, and presentation.</li>
+                    <li>Possible bias or misleading information.</li>
+                </ul>
+                <div class="example">
+                    Two news reports may describe the same event differently.
+                    Compare their sources and evidence before forming a conclusion.
+                </div>
+                <div class="key">REMEMBER: Think critically before accepting information from any media source.</div>
+            </div>
+        </details>
+
+        <h3 class="quarter-title">FOURTH QUARTER — CRITICAL READING AND ANALYSIS</h3>
+
+        <details class="lesson">
+            <summary>16. Evaluating the Relevance and Worth of Ideas</summary>
+            <div class="lesson-content">
+                <h3>What is Relevance?</h3>
+                <p>Relevance refers to how closely information relates to the topic or question.</p>
+                <h3>What is Worth?</h3>
+                <p>Worth refers to the usefulness, importance, or value of an idea or information.</p>
+                <ul>
+                    <li>Check whether the idea answers the question.</li>
+                    <li>Determine whether it is supported by evidence.</li>
+                    <li>Consider whether it is useful and important.</li>
+                </ul>
+                <div class="key">REMEMBER: Relevant information is connected to the topic; valuable information is useful and meaningful.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>17. Evaluating an Author's Reasoning</summary>
+            <div class="lesson-content">
+                <h3>What is Reasoning?</h3>
+                <p>Reasoning is the process of using facts, evidence, and logical thinking to support a conclusion.</p>
+                <h3>Important Parts of an Argument</h3>
+                <ul>
+                    <li><b>Claim:</b> The main point or position.</li>
+                    <li><b>Evidence:</b> Information supporting the claim.</li>
+                    <li><b>Reasoning:</b> Explains how the evidence supports the claim.</li>
+                    <li><b>Conclusion:</b> The final idea based on the argument.</li>
+                </ul>
+                <div class="example">
+                    Claim: Students should read every day.
+                    <br>Evidence: Reading helps develop vocabulary.
+                    <br>Reasoning: Regular reading exposes students to new words and their meanings.
+                </div>
+                <div class="key">REMEMBER: A strong argument has a clear claim, relevant evidence, and logical reasoning.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>18. Facts and Opinions</summary>
+            <div class="lesson-content">
+                <h3>What is a Fact?</h3>
+                <p>A fact is a statement that can be verified or proven true or false.</p>
+                <h3>What is an Opinion?</h3>
+                <p>An opinion expresses a person's belief, feeling, or judgment.</p>
+                <div class="example">
+                    Fact: The Philippines is an archipelago.
+                    <br>Opinion: The Philippines is the most beautiful country.
+                </div>
+                <h3>Clues for Opinions</h3>
+                <ul>
+                    <li>I think...</li>
+                    <li>In my opinion...</li>
+                    <li>Best, worst, beautiful, boring, wonderful.</li>
+                </ul>
+                <div class="key">REMEMBER: Facts can be verified. Opinions express personal views.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>19. Making Value Judgments</summary>
+            <div class="lesson-content">
+                <h3>What is a Value Judgment?</h3>
+                <p>A value judgment is an evaluation of something based on standards, principles, or beliefs about what is good, bad, fair, or important.</p>
+                <h3>How to Make a Good Judgment</h3>
+                <ul>
+                    <li>Understand the issue.</li>
+                    <li>Consider different perspectives.</li>
+                    <li>Use reliable information.</li>
+                    <li>Apply fair and reasonable standards.</li>
+                    <li>Explain your decision.</li>
+                </ul>
+                <div class="example">
+                    A student judges a school policy by considering
+                    whether it is fair, helpful, and supported by good reasons.
+                </div>
+                <div class="key">REMEMBER: A strong value judgment is fair, thoughtful, and supported by reasons.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>20. Formulating Evidence-Based Opinions</summary>
+            <div class="lesson-content">
+                <h3>What is an Evidence-Based Opinion?</h3>
+                <p>It is a personal position supported by reliable facts, examples, or research.</p>
+                <h3>Steps</h3>
+                <ol>
+                    <li>Understand the issue.</li>
+                    <li>Gather reliable information.</li>
+                    <li>Consider different viewpoints.</li>
+                    <li>Form your position.</li>
+                    <li>Support your opinion with evidence.</li>
+                </ol>
+                <div class="example">
+                    Opinion: Schools should encourage reading.
+                    <br>Evidence: Regular reading helps learners develop vocabulary and comprehension.
+                </div>
+                <div class="key">REMEMBER: Opinion + Reliable Evidence + Clear Explanation = Stronger Argument.</div>
+            </div>
+        </details>
+    </section>
+
+    <!-- GRADE 10 -->
+
+    <section id="grade10">
+        <div class="grade-banner">
+            <h2>📚 GRADE 10 ENGLISH</h2>
+            <p>FIRST TERM</p>
+            <p>World Literature • Literary Analysis • Multimodal Texts</p>
+        </div>
+
+        <h3 class="quarter-title">FIRST TERM — LITERATURE AND TEXT ANALYSIS</h3>
+
+        <details class="lesson">
+            <summary>1. World Literature</summary>
+            <div class="lesson-content">
+                <h3>What is World Literature?</h3>
+                <p>World Literature refers to literary works from different countries and cultures.</p>
+                <h3>Examples of Literary Works</h3>
+                <ul>
+                    <li><b>Poetry:</b> Uses rhythm, imagery, and figurative language.</li>
+                    <li><b>Short Story:</b> A brief fictional narrative.</li>
+                    <li><b>Novel:</b> A long fictional story.</li>
+                    <li><b>Drama:</b> A literary work written to be performed.</li>
+                    <li><b>Myth:</b> A traditional story that may explain beliefs or natural events.</li>
+                    <li><b>Folktale:</b> A traditional story passed down through generations.</li>
+                </ul>
+                <div class="example">Reading stories from different countries helps us understand different cultures and perspectives.</div>
+                <div class="key">REMEMBER: World Literature = Literary works from different countries and cultures.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>2. Sociocultural Context</summary>
+            <div class="lesson-content">
+                <h3>What is Sociocultural Context?</h3>
+                <p>It refers to the social and cultural conditions surrounding a literary work.</p>
+                <ul>
+                    <li><b>Culture:</b> Beliefs, customs, and traditions.</li>
+                    <li><b>Society:</b> A community of people.</li>
+                    <li><b>History:</b> Events from the past.</li>
+                    <li><b>Religion:</b> Beliefs and practices related to faith.</li>
+                    <li><b>Social Class:</b> People's position in society.</li>
+                    <li><b>Environment:</b> The surroundings that influence people's lives.</li>
+                </ul>
+                <div class="example">A story about arranged marriage may reflect the traditions and expectations of a particular society.</div>
+                <div class="key">REMEMBER: Sociocultural Context = Society and culture surrounding a literary work.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>3. Character and Characterization</summary>
+            <div class="lesson-content">
+                <h3>What is a Character?</h3>
+                <p>A character is a person, animal, or being that takes part in a story.</p>
+                <h3>Types of Characters</h3>
+                <ul>
+                    <li><b>Protagonist:</b> The central character.</li>
+                    <li><b>Antagonist:</b> The character or force opposing the protagonist.</li>
+                    <li><b>Major Character:</b> Plays an important role.</li>
+                    <li><b>Minor Character:</b> Has a smaller role.</li>
+                    <li><b>Dynamic Character:</b> Undergoes an important change.</li>
+                    <li><b>Static Character:</b> Remains mostly the same.</li>
+                </ul>
+                <h3>Methods of Characterization</h3>
+                <ul>
+                    <li><b>Direct:</b> The author directly tells the reader about the character.</li>
+                    <li><b>Indirect:</b> The reader discovers traits through actions, dialogue, thoughts, and interactions.</li>
+                </ul>
+                <div class="example">Direct: "Maria was kind." <br>Indirect: "Maria shared her lunch with a classmate."</div>
+                <div class="key">REMEMBER: Character = Who is in the story. Characterization = How personality is revealed.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>4. Literary Conflict</summary>
+            <div class="lesson-content">
+                <h3>What is Conflict?</h3>
+                <p>Conflict is the struggle or problem experienced by a character.</p>
+                <ul>
+                    <li><b>Internal Conflict:</b> A struggle within a character's mind or emotions.</li>
+                    <li><b>External Conflict:</b> A struggle between a character and an outside force.</li>
+                    <li><b>Character vs. Self:</b> A struggle with personal decisions or feelings.</li>
+                    <li><b>Character vs. Character:</b> A struggle between people.</li>
+                    <li><b>Character vs. Society:</b> A struggle against social rules or expectations.</li>
+                    <li><b>Character vs. Nature:</b> A struggle against natural forces.</li>
+                    <li><b>Character vs. Technology:</b> A struggle involving machines or technology.</li>
+                    <li><b>Character vs. Supernatural:</b> A struggle against mysterious forces.</li>
+                </ul>
+                <div class="key">REMEMBER: Conflict = The problem or struggle in a story.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>5. Plot Structure</summary>
+            <div class="lesson-content">
+                <h3>What is Plot?</h3>
+                <p>Plot is the sequence of events in a story.</p>
+                <h3>Five Parts of Plot</h3>
+                <ol>
+                    <li><b>Exposition:</b> Introduces characters, setting, and situation.</li>
+                    <li><b>Rising Action:</b> Develops the conflict and builds tension.</li>
+                    <li><b>Climax:</b> The most intense turning point.</li>
+                    <li><b>Falling Action:</b> Events after the climax.</li>
+                    <li><b>Resolution:</b> The ending or conclusion.</li>
+                </ol>
+                <h3>Types of Plot Structure</h3>
+                <ul>
+                    <li><b>Linear:</b> Events happen in chronological order.</li>
+                    <li><b>Flashback:</b> The story goes back to an earlier event.</li>
+                    <li><b>Episodic:</b> The story is divided into connected episodes.</li>
+                    <li><b>Parallel:</b> Two or more storylines develop alongside one another.</li>
+                </ul>
+                <div class="key">REMEMBER: Exposition → Rising Action → Climax → Falling Action → Resolution.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>6. Point of View</summary>
+            <div class="lesson-content">
+                <h3>What is Point of View?</h3>
+                <p>Point of view is the perspective from which a story is told.</p>
+                <ul>
+                    <li><b>First Person:</b> Uses I, me, my, or we.</li>
+                    <li><b>Second Person:</b> Uses you or your.</li>
+                    <li><b>Third Person Limited:</b> Follows the thoughts and feelings of one character.</li>
+                    <li><b>Third Person Omniscient:</b> Knows the thoughts and feelings of multiple characters.</li>
+                    <li><b>Third Person Objective:</b> Reports actions and dialogue without revealing inner thoughts.</li>
+                </ul>
+                <div class="example">First: "I walked into the classroom." <br>Second: "You walk into the classroom." <br>Third: "She walked into the classroom."</div>
+                <div class="key">REMEMBER: First = I/We; Second = You; Third = He/She/They.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>7. Narrative Techniques</summary>
+            <div class="lesson-content">
+                <h3>What are Narrative Techniques?</h3>
+                <p>These are methods writers use to tell a story and make it more interesting.</p>
+                <ul>
+                    <li><b>Flashback:</b> Takes the reader back to an earlier event.</li>
+                    <li><b>Foreshadowing:</b> Gives hints about what may happen later.</li>
+                    <li><b>Suspense:</b> Creates excitement or uncertainty.</li>
+                    <li><b>Imagery:</b> Uses descriptive language that appeals to the senses.</li>
+                    <li><b>Symbolism:</b> Uses something to represent a deeper meaning.</li>
+                    <li><b>Dialogue:</b> Conversation between characters.</li>
+                </ul>
+                <div class="example">Dark clouds gathering before a storm may be an example of foreshadowing.</div>
+                <div class="key">REMEMBER: Flashback = Past event. Foreshadowing = Hint about the future.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>8. Literary Analysis</summary>
+            <div class="lesson-content">
+                <h3>What is Literary Analysis?</h3>
+                <p>It is the careful examination of a literary work to understand its meaning, message, and techniques.</p>
+                <ul>
+                    <li><b>Theme:</b> The central message or insight about life.</li>
+                    <li><b>Setting:</b> The time and place of the story.</li>
+                    <li><b>Character:</b> The people or beings in the story.</li>
+                    <li><b>Plot:</b> The sequence of events.</li>
+                    <li><b>Conflict:</b> The struggle in the story.</li>
+                    <li><b>Tone:</b> The author's attitude toward the subject.</li>
+                    <li><b>Mood:</b> The feeling created in the reader.</li>
+                    <li><b>Symbolism:</b> Objects or events representing deeper meanings.</li>
+                </ul>
+                <h3>Theme vs. Main Idea</h3>
+                <p>Theme is a message about life. Main idea is what a passage is mostly about.</p>
+                <div class="key">REMEMBER: Tone = Author's attitude. Mood = Reader's feeling.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>9. Drama and Prose</summary>
+            <div class="lesson-content">
+                <h3>What is Drama?</h3>
+                <p>Drama is a literary work written mainly to be performed by actors.</p>
+                <ul>
+                    <li><b>Dialogue:</b> Words spoken by characters.</li>
+                    <li><b>Stage Directions:</b> Instructions about movements and actions.</li>
+                    <li><b>Acts:</b> Major divisions of a play.</li>
+                    <li><b>Scenes:</b> Smaller divisions within an act.</li>
+                </ul>
+                <h3>Types of Drama</h3>
+                <ul>
+                    <li><b>Tragedy:</b> A serious play often involving suffering or an unhappy outcome.</li>
+                    <li><b>Comedy:</b> A play that uses humor and often ends happily.</li>
+                    <li><b>Tragicomedy:</b> Combines serious and humorous elements.</li>
+                    <li><b>Melodrama:</b> Emphasizes strong emotions and clear conflicts.</li>
+                </ul>
+                <h3>What is Prose?</h3>
+                <p>Prose is ordinary written or spoken language arranged in sentences and paragraphs.</p>
+                <ul>
+                    <li><b>Fiction:</b> Imaginative or invented stories.</li>
+                    <li><b>Nonfiction:</b> Writing based on real people, events, or information.</li>
+                </ul>
+                <div class="key">REMEMBER: Drama = Written for performance. Prose = Ordinary language.</div>
+            </div>
+        </details>
+
+        <details class="lesson">
+            <summary>10. Multimodal Text Production</summary>
+            <div class="lesson-content">
+                <h3>What is Multimodal Text?</h3>
+                <p>A multimodal text communicates through two or more modes of communication.</p>
+                <h3>Five Modes</h3>
+                <ul>
+                    <li><b>Linguistic:</b> Written or spoken words.</li>
+                    <li><b>Visual:</b> Images, colors, and graphics.</li>
+                    <li><b>Audio:</b> Music, sound effects, and spoken sounds.</li>
+                    <li><b>Gestural:</b> Body movements and facial expressions.</li>
+                    <li><b>Spatial:</b> Arrangement and positioning of elements.</li>
+                </ul>
+                <h3>Examples</h3>
+                <ul>
+                    <li>Movies and short films.</li>
+                    <li>Infographics.</li>
+                    <li>Presentations.</li>
+                    <li>Advertisements.</li>
+                    <li>Digital stories.</li>
+                </ul>
+                <h3>Three Stages of Film Production</h3>
+                <ol>
+                    <li><b>Pre-production:</b> Planning the story, script, characters, and locations.</li>
+                    <li><b>Production:</b> Recording or filming scenes.</li>
+                    <li><b>Post-production:</b> Editing the video and adding sound or effects.</li>
+                </ol>
+                <div class="key">REMEMBER: Multimodal = Combining different modes to communicate a message.</div>
+            </div>
+        </details>
+    </section>
+
+    <section class="quiz-section" id="quiz9">
+        <div class="grade-banner">
+            <h2>✏️ GRADE 9 ENGLISH QUIZ</h2>
+            <p>Test your knowledge from First to Fourth Quarter!</p>
+        </div>
+
+        <div id="quiz9Container"></div>
+
+        <div class="quiz-buttons">
+            <button onclick="checkQuiz(9)">Check My Answers</button>
+            <button onclick="resetQuiz(9)">Try Again</button>
+        </div>
+
+        <div class="result" id="result9"></div>
+    </section>
+
+    <section class="quiz-section" id="quiz10">
+        <div class="grade-banner">
+            <h2>✏️ GRADE 10 ENGLISH QUIZ</h2>
+            <p>Test your knowledge from First Term!</p>
+        </div>
+
+        <div id="quiz10Container"></div>
+
+        <div class="quiz-buttons">
+            <button onclick="checkQuiz(10)">Check My Answers</button>
+            <button onclick="resetQuiz(10)">Try Again</button>
+        </div>
+
+        <div class="result" id="result10"></div>
+    </section>
+
+</main>
+
+<footer>
+    <b>GRADE 9 & 10 ENGLISH REVIEWER | RSAT PREPARATION</b>
+    <p>Concepcion Integrated School - Secondary Level</p>
+    <p>Made by Angel De Guzman Tictic │ 10-Patient</p>
+    <p>Learn • Understand • Practice • Achieve 💛</p>
+</footer>
+
+<script>
+const quizData = {
+9: [
+    {
+        q:"Which modal expresses a strong obligation?",
+        choices:["Might","Must","Could","May"],
+        answer:1
+    },
+    {
+        q:"Which conditional is used for general truths?",
+        choices:["First","Second","Zero","Third"],
+        answer:2
+    },
+    {
+        q:"What word formation process combines breakfast and lunch?",
+        choices:["Clipping","Blending","Compounding","Acronym"],
+        answer:1
+    },
+    {
+        q:"Which context clue uses a word with a similar meaning?",
+        choices:["Antonym","Synonym","Inference","Example"],
+        answer:1
+    },
+    {
+        q:"Which communicative style is commonly used in official ceremonies and fixed expressions?",
+        choices:["Casual","Intimate","Frozen","Consultative"],
+        answer:2
+    },
+    {
+        q:"What does contrasting identify?",
+        choices:["Similarities","Differences","The main character","The setting"],
+        answer:1
+    },
+    {
+        q:"Connecting a story about bullying to bullying in real schools is an example of:",
+        choices:["Text-to-Self","Text-to-Text","Text-to-World","Flashback"],
+        answer:2
+    },
+    {
+        q:"Which refers to the traditions, beliefs, and customs of a group?",
+        choices:["Culture","Plot","Conflict","Point of view"],
+        answer:0
+    },
+    {
+        q:"A character who returns a lost wallet demonstrates which value?",
+        choices:["Dishonesty","Honesty","Pride","Jealousy"],
+        answer:1
+    },
+    {
+        q:"What does the letter A in VUCA stand for?",
+        choices:["Ability","Ambiguity","Action","Accuracy"],
+        answer:1
+    },
+    {
+        q:"What is prejudice?",
+        choices:[
+            "A verified fact",
+            "An opinion formed without sufficient knowledge or evidence",
+            "A literary theme",
+            "A type of plot"
+        ],
+        answer:1
+    },
+    {
+        q:"What should you check to determine whether an online source is trustworthy?",
+        choices:[
+            "Its color",
+            "Its number of pictures",
+            "Its author and supporting evidence",
+            "Its font size"
+        ],
+        answer:2
+    },
+    {
+        q:"What is evidence?",
+        choices:[
+            "Information supporting a claim",
+            "An unsupported guess",
+            "A personal feeling",
+            "A fictional character"
+        ],
+        answer:0
+    },
+    {
+        q:"A speaker gives facts about climate change. What is the likely purpose?",
+        choices:["To inform","To entertain","To confuse","To insult"],
+        answer:0
+    },
+    {
+        q:"Which statement is a fact?",
+        choices:[
+            "Reading is the best hobby.",
+            "English is the most beautiful language.",
+            "The Earth revolves around the Sun.",
+            "Math is boring."
+        ],
+        answer:2
+    }
+],
+
+10: [
+    {
+        q:"What is World Literature?",
+        choices:[
+            "Literary works from only one country",
+            "Literary works from different countries and cultures",
+            "Scientific articles",
+            "News reports only"
+        ],
+        answer:1
+    },
+    {
+        q:"What refers to the social and cultural conditions surrounding a literary work?",
+        choices:["Plot","Point of view","Sociocultural context","Characterization"],
+        answer:2
+    },
+    {
+        q:"Who is the central character of a story?",
+        choices:["Antagonist","Protagonist","Minor character","Narrator"],
+        answer:1
+    },
+    {
+        q:"What type of characterization directly describes a character?",
+        choices:["Indirect","Direct","Symbolism","Foreshadowing"],
+        answer:1
+    },
+    {
+        q:"A character struggles with personal fears and decisions. What conflict is this?",
+        choices:[
+            "Character vs. Nature",
+            "Character vs. Society",
+            "Character vs. Self",
+            "Character vs. Technology"
+        ],
+        answer:2
+    },
+    {
+        q:"What is the most intense turning point of a story?",
+        choices:["Exposition","Rising Action","Climax","Resolution"],
+        answer:2
+    },
+    {
+        q:"What plot structure presents events in chronological order?",
+        choices:["Flashback","Linear plot","Parallel plot","Episodic plot"],
+        answer:1
+    },
+    {
+        q:"Which point of view uses I, me, and we?",
+        choices:["First Person","Second Person","Third Person","Third Person Omniscient"],
+        answer:0
+    },
+    {
+        q:"Which point of view knows the thoughts of multiple characters?",
+        choices:["First Person","Second Person","Third Person Limited","Third Person Omniscient"],
+        answer:3
+    },
+    {
+        q:"What narrative technique gives hints about events that may happen later?",
+        choices:["Flashback","Foreshadowing","Dialogue","Imagery"],
+        answer:1
+    },
+    {
+        q:"Which literary element refers to the central message about life?",
+        choices:["Setting","Tone","Theme","Plot"],
+        answer:2
+    },
+    {
+        q:"What is the difference between tone and mood?",
+        choices:[
+            "Tone is the author's attitude; mood is the feeling created in the reader.",
+            "Tone is the setting; mood is the plot.",
+            "Tone is the conflict; mood is the character.",
+            "They mean exactly the same thing."
+        ],
+        answer:0
+    },
+    {
+        q:"Which literary form is mainly written to be performed by actors?",
+        choices:["Prose","Drama","Essay","Biography"],
+        answer:1
+    },
+    {
+        q:"Which communication mode includes music and sound effects?",
+        choices:["Visual","Spatial","Audio","Linguistic"],
+        answer:2
+    },
+    {
+        q:"What is the stage of film production where the video is edited?",
+        choices:["Pre-production","Production","Post-production","Planning"],
+        answer:2
+    }
+]
+};
+
+function renderQuiz(grade) {
+    const container = document.getElementById("quiz" + grade + "Container");
+    const questions = quizData[grade];
+
+    container.innerHTML = "";
+
+    questions.forEach((item,index) => {
+        let html = `
+            <div class="quiz-question">
+                <p>${index+1}. ${item.q}</p>
+        `;
+
+        item.choices.forEach((choice,choiceIndex) => {
+            html += `
+                <label>
+                    <input type="radio"
+                    name="g${grade}q${index}"
+                    value="${choiceIndex}">
+                    ${String.fromCharCode(65+choiceIndex)}. ${choice}
+                </label>
+            `;
+        });
+
+        html += "</div>";
+        container.innerHTML += html;
+    });
+}
+
+function checkQuiz(grade) {
+    const questions = quizData[grade];
+    let score = 0;
+    let unanswered = 0;
+
+    questions.forEach((item,index) => {
+        const selected = document.querySelector(
+            `input[name="g${grade}q${index}"]:checked`
+        );
+
+        if (!selected) {
+            unanswered++;
+        } else if (Number(selected.value) === item.answer) {
+            score++;
+        }
+    });
+
+    const result = document.getElementById("result" + grade);
+    result.style.display = "block";
+
+    if (unanswered > 0) {
+        result.innerHTML = `
+            <h3>Almost there!</h3>
+            <p>You still have ${unanswered} unanswered question(s).</p>
+            <p>Answer all questions before checking your score.</p>
+        `;
+        return;
+    }
+
+    let message = "";
+
+    if (score === questions.length) {
+        message = "Perfect! Excellent work! 🌟";
+    } else if (score >= questions.length * 0.8) {
+        message = "Great job! You understand the lessons well!";
+    } else if (score >= questions.length * 0.6) {
+        message = "Good effort! Review the topics you missed.";
+    } else {
+        message = "Keep practicing! Review the lessons and try again.";
+    }
+
+    result.innerHTML = `
+        <h2>Your Score: ${score}/${questions.length}</h2>
+        <h3>${Math.round((score/questions.length)*100)}%</h3>
+        <p>${message}</p>
+    `;
+
+    result.scrollIntoView({
+        behavior:"smooth",
+        block:"center"
+    });
+}
+
+function resetQuiz(grade) {
+    document.querySelectorAll(
+        `input[name^="g${grade}q"]`
+    ).forEach(input => input.checked = false);
+
+    const result = document.getElementById("result" + grade);
+    result.style.display = "none";
+    result.innerHTML = "";
+
+    document.getElementById("quiz" + grade).scrollIntoView({
+        behavior:"smooth"
+    });
+}
+
+function searchLessons() {
+    const input = document.getElementById("searchInput")
+        .value.toLowerCase();
+
+    document.querySelectorAll(".lesson").forEach(lesson => {
+        const text = lesson.innerText.toLowerCase();
+        lesson.style.display = text.includes(input) ? "" : "none";
+    });
+
+    document.querySelectorAll(".quarter-title").forEach(title => {
+        const next = [];
+        let element = title.nextElementSibling;
+
+        while(element && !element.classList.contains("quarter-title")
+              && !element.classList.contains("grade-banner")) {
+            if(element.classList.contains("lesson")) {
+                next.push(element);
+            }
+            element = element.nextElementSibling;
+        }
+
+        title.style.display = next.some(
+            lesson => lesson.style.display !== "none"
+        ) ? "" : "none";
+    });
+}
+
+renderQuiz(9);
+renderQuiz(10);
+</script>
+
+</body>
+</html>
